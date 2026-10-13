@@ -1,11 +1,10 @@
 import sys
 
 def simInt(principal, rate, time):
-    return (principal * interest * time)/100
+    return (principal * rate * time) / 100
 
-if __name__ == "__main__":
-    p = int(sys.argv[1])
-    r = float(sys.argv[2])
-    t = int(sys.argv[3])
+p = float(sys.argv[1])
+r = float(sys.argv[2])
+t = float(sys.argv[3])
 
-    print("simple interest: ", simInt(p, r, t))
+print("simple interest:", simInt(p, r, t))
